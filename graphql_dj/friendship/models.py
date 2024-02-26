@@ -1,9 +1,8 @@
 from django.db import models
-from user.models import User as User
 
 
 ## Docuemntation:
-#### - ModelName: FriendShip
+#### - ModelName: Friendship
 #### - Purpose: Describes the relationship between 2 users
 ####          antyhing that has something to with relationships
 ####          is being handled in this model
@@ -19,10 +18,10 @@ from user.models import User as User
 ####
 #### - last_edited: hel-mefe
 
-class FriendShip(models.Model):
+class Friendship(models.Model):
     id = models.AutoField(primary_key=True, unique=True)
-    user1 = models.ForeignKey(User, on_delete=models.CASCADE, unique=True)
-    user2 = models.ForeignKey(User, on_delete=models.CASCADE, unique=True)
+    user1 = models.ForeignKey('user.User', on_delete=models.CASCADE, related_name='user1')
+    user2 = models.ForeignKey('user.User', on_delete=models.CASCADE, related_name='user2')
     is_user1_following_user2 = models.BooleanField(default=False)
     is_user2_following_user1 = models.BooleanField(default=False)
     user1_followed_user2_at = models.DateTimeField(default=-1)

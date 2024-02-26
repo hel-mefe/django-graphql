@@ -1,7 +1,7 @@
 import graphene
 from graphene_django.types import DjangoObjectType
-from .models import FriendShip
+from .models import Friendship
 
 
-class FriendShipMutation(graphene.ObjectType):
+class FriendshipMutation(graphene.ObjectType):
     pass
