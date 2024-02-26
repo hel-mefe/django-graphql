@@ -1,5 +1,5 @@
-import UserSettingsQuery from .query
-import UserSettingsMutation from .mutation
+from .query import GameQuery
+from .mutation import GameMutation
 import graphene
 
 ## Docuemntation:
@@ -22,4 +22,4 @@ import graphene
 ####
 #### - last_edited: hel-mefe
 
-schema = graphene.Schema(query=UserSettingsQuery, mutation=UserSettingsMutation)
+schema = graphene.Schema(query=GameQuery, mutation=GameMutation)

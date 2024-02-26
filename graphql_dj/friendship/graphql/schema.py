@@ -1,5 +1,5 @@
-from .query import NotificationQuery
-from .mutation import NotificationMutation 
+from .query import FriendshipQuery
+from .mutation import FriendshipMutation
 import graphene
 
 ## Docuemntation:
@@ -22,4 +22,4 @@ import graphene
 ####
 #### - last_edited: hel-mefe
 
-schema = graphene.Schema(query=NotificationQuery, mutation=NotificationMutation)
+schema = graphene.Schema(query=FriendshipQuery, mutation=FriendshipMutation)

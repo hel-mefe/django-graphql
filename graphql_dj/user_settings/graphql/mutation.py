@@ -1,11 +1,8 @@
 import graphene
 from graphene_django.types import DjangoObjectType
-from .models import FriendShip
+from .type import UserSettingsType
+from ..models import UserSettings
 
-#### Description:
-##
-##
-##
-##
 class UserSettingsMutation(graphene.ObjectType):
     pass
+

@@ -1,5 +1,5 @@
-import GameQuery from .query
-import GameMutation from .mutation
+from .query import GameQuery
+from .mutation import GameMutation
 import graphene
 
 ## Docuemntation:

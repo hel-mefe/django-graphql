@@ -1,5 +1,5 @@
-import FriendshipQuery from .query
-import FriendshipMutation from .mutation
+from .query import UserSettingsQuery
+from .mutation import UserSettingsMutation
 import graphene
 
 ## Docuemntation:
@@ -22,4 +22,4 @@ import graphene
 ####
 #### - last_edited: hel-mefe
 
-schema = graphene.Schema(query=FriendshipQuery, mutation=FriendshipMutation)
+schema = graphene.Schema(query=UserSettingsQuery, mutation=UserSettingsMutation)

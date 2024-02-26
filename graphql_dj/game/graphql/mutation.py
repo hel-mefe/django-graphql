@@ -1,10 +1,7 @@
 import graphene
 from graphene_django.types import DjangoObjectType
+from .type import GameType
+from ..models import Game
 
-#### Description:
-##
-##
-##
-##
 class GameMutation(graphene.ObjectType):
     pass
